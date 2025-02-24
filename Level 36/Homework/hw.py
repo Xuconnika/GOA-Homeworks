@@ -1,11 +1,3 @@
 
-
-
-def opposite(number):
-      # ფუნქცია აბრუნებს რიცხვის საწინააღმდეგო მნიშვნელობას
-      # მაგ: თუ შევიყვანთ 5-ს დააბრუნებს -5-ს
-      return -number
-
-
-
-
+def solution(string):
+    return string[::-1]

@@ -11,3 +11,4 @@ list.remove(2)
 
 print(len(list)+list.count(6))
 
+ 

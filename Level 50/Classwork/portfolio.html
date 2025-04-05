@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nika Xucishvili - Portfolio</title>
+    <style>
+        body {
+            background-image: url('https://aws-tiqets-cdn.imgix.net/images/content/6306e3fcc7c745d3b44d18d9ce88a1db.jpeg?auto=format%2Ccompress&fit=crop&ixlib=python-3.2.1&q=70');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #00ff9d;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #00ff9d;
+        }
+
+        nav {
+            background-color: rgba(10, 10, 10, 0.98);
+            padding: 1rem;
+            border-bottom: 1px solid #00ff9d;
+            text-align: center;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        nav a {
+            color: #00ff9d;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+            display: inline-block;
+            padding: 0.5rem;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-card {
+            background-color: rgba(15, 15, 15, 0.95);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #00ff9d;
+            box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s;
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.4);
+        }
+
+        h1, h2, h3 {
+            color: #00ff9d;
+            text-shadow: 0 0 5px rgba(0, 255, 157, 0.5);
+        }
+
+        footer {
+            background-color: rgba(10, 10, 10, 0.98);
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+            border-top: 1px solid #00ff9d;
+            margin-top: 2rem;
+        }
+
+        #about, #skills, #contact {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #00ff9d;
+            transition: all 0.3s ease;
+        }
+
+        #about:hover, #skills:hover, #contact:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 157, 0.6);
+            transform: scale(1.02);
+        }
+
+        .profile-box {
+            background-color: rgba(15, 15, 15, 0.95);
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #00ff9d;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-content, .goals-content {
+            padding: 1rem;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00ff9d;
+            margin-bottom: 1rem;
+            transition: all 0.5s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.6);
+        }
+
+        .github-link {
+            color: #00ff9d;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            display: inline-block;
+            margin: 0.5rem 0;
+        }
+
+        .github-link:hover {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        @media screen and (min-width: 768px) {
+            .profile-box {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .container {
+                padding: 2rem;
+            }
+
+            header {
+                padding: 2rem;
+            }
+
+            .skills {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+            }
+
+            nav a {
+                margin: 0 1rem;
+            }
+
+            .skill-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Nika Xucishvili</h1>
+        <p>Programmer & Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="profile-box">
+            <div class="profile-content">
+                <img src="photo copy.jpg" alt="Nika Xucishvili" class="profile-image">
+                <h2>Find me on GitHub</h2>
+                <a href="https://github.com/Xuconnika" class="github-link">My Github</a>
+            </div>
+            <div class="goals-content">
+                <h2>My Goals</h2>
+                <p>• Become a Full-Stack Developer</p>
+                <p>• Work For My Dream Company Insomniac</p>
+                <p>• Contribute to Open Source Projects</p>
+                <p>• Eventually Start My Own Company</p>
+            </div>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Nika Xucishvili, If i were to describe myself, Im the type of person that if you give something to work on and i dont know it, I'll say that i dont know it, But i will find the solution, Since childhood when i played games i always thought "Wow! How do they make these?", And thus i knew what my dream was, My dream was to give this same inspiration to others, The thing that has helped me a lot is my knowledge for English, It feels like i was born with it and people say its truly amazing, I wanna prove that even with just a little passion, You can always make it big!</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Web Structure & Semantics</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Web Styling & Design</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>Backend & Automation</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Lua</h3>
+                    <p>Game Development & Scripting</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaboration or questions!</p>
+            <p>Email: xuconika.12@gmail.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Nika Xucishvili. All rights reserved.</p>
+    </footer>
+
+ 
+</body>
+</html>
+
+
